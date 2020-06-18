@@ -1,0 +1,41 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    //JSON
+    compile group: 'net.sf.json-lib', name: 'json-lib', version: '2.4', classifier: 'jdk15'
+    compile group: 'org.postgresql', name: 'postgresql', version: '42.1.4'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.3.1.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.3.1.RELEASE'
+    compile group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
+    compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+
+    //EXCLUSIVAS DA ANALITICS API
+    compile group: 'xpp3', name: 'xpp3', version: '1.1.4c'
+    compile group: 'javax.transaction', name: 'javax.transaction-api', version: '1.2'
+    compile group: 'com.google.protobuf', name: 'protobuf-java', version: '3.12.2'
+    compile group: 'javax.jdo', name: 'jdo2-api', version: '2.3-eb'
+    compile group: 'org.codehaus.jackson', name: 'jackson-core-asl', version: '1.9.13'
+    compile group: 'org.apache.httpcomponents', name: 'httpcore', version: '4.4.13'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.12'
+    compile group: 'com.google.api-client', name: 'google-api-client-gson', version: '1.30.9'
+    compile group: 'commons-logging', name: 'commons-logging', version: '1.2'
+    compile group: 'com.google.oauth-client', name: 'google-oauth-client-servlet', version: '1.30.6'
+    compile group: 'com.google.oauth-client', name: 'google-oauth-client', version: '1.30.6'
+    compile group: 'com.google.api-client', name: 'google-api-client', version: '1.30.9'
+    compile group: 'com.google.api-client', name: 'google-api-client-servlet', version: '1.30.9'
+    compile group: 'com.google.apis', name: 'google-api-services-analyticsreporting', version: 'v4-rev174-1.25.0'
+
+
+
+}
