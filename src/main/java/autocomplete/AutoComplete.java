@@ -59,6 +59,6 @@ public class AutoComplete { //extends AbstractEntity {
 	
 	@Override
 	public String toString() {
-		return "br.com.lelloimoveis.api.model.AutoComplete[ chave=" + this.chave + " ]";
+		return this.chave;
 	}
 }

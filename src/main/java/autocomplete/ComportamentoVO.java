@@ -50,6 +50,6 @@ public class ComportamentoVO {
 	
 	@Override
 	public String toString() {
-		return "br.com.lelloimoveis.api.vo.ComportamentoVO[ comportamento=" + this.comportamento + " ]";
+		return this.comportamento;
 	}
 }
